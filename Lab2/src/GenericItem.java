@@ -49,4 +49,8 @@ public class GenericItem {
         return new GenericItem(this.analog.ID, this.analog.name, this.analog.price, this.analog.category);
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(ID, name, price, analog, category);
+    }
 }

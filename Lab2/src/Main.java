@@ -16,8 +16,7 @@ public class Main {
 
 
         GenericItem[] items = {new FoodItem(4, "Milk", 20, Category.FOOD, new Date(), (short)45),
-                               new TechnicalItem(5, "Milk", 20, Category.FOOD,(short) 50)
-    };  
+                               new TechnicalItem(5, "Milk", 20, Category.FOOD,(short) 50)};
         for (GenericItem item:items) {
             item.printALL();
         }

@@ -8,14 +8,14 @@ public class Main {
 
 
         System.out.println("\n task 2");
-        byte v_byte = 127;
+        byte v_byte = 120;
         short v_short = 129;
-        int v_int = 120000;
-        long v_long = 12;
+        int v_int = 65999;
+        long v_long = 42946967296L;
         char v_char = 'a';
         boolean v_boolean = true;
-        float v_float = 0;
-        double v_double = 0.12345;
+        float v_float = 0.33333334f;
+        double v_double = 0.333333333333;
 
         System.out.println("byte: " + v_byte);
         System.out.println("short: " + v_short);
@@ -28,8 +28,8 @@ public class Main {
 
 
         System.out.println("\n task 3");
-        for (int i = (int)'a'; i <= (int)'z'; i++)
-            System.out.print((char)i);
+        for (int i = 'a'; i <= 'z'; i++)
+            System.out.print(i);
 
         System.out.println();
         long begin = new java.util.Date().getTime();
@@ -73,6 +73,11 @@ public class Main {
             }
         }
 
+        for (int i=0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print(matrix[j][i]);
+            }
+        }
         System.out.println("transposed:");
         for (int i=0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
